@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>TATETURRO</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <h1 class="header__title">Tic Tac Toe</h1>
+        <h2 class="winner">Game begin</h2>
+    </div>
+    <!-- mainboard -->
+    <main class="mainboard">
+        <div class="square" data-cell='0'></div>
+        <div class="square" data-cell='1'></div>
+        <div class="square" data-cell='2'></div>
+        <div class="square" data-cell='3'></div>
+        <div class="square" data-cell='4'></div>
+        <div class="square" data-cell='5'></div>
+        <div class="square" data-cell='6'></div>
+        <div class="square" data-cell='7'></div>
+        <div class="square" data-cell='8'></div>
+    </main>
+    <div class="modal">
+        <h2 class="winner__text">MOCK</h2>
+        <button class="btn bnt--restart" onclick="gameboard.restart()">RESTART</button>
+    </div>
+</body>
+</html>

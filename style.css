@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --mist: #90AFC5;
+    --stone: #336b87;
+    --shadow: #2a3132;
+    --autumn-foliage: #763626;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+
+body {
+    min-height: 100vh;
+    background-color: var(--mist);
+
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--stone);
+    color: var(--shadow);
+    box-shadow: 0 0.5rem 1.5rem var(--shadow);
+}
+
+.header > h1 {
+    font-size: 100px;
+}
+
+.header > h2 {
+    font-size: 50px;
+}
+
+@media (max-width: 1000px) {
+    
+
+    .header > h1 {
+        font-size: 70px;
+    }
+
+    .header > h2 {
+        font-size: 30px
+    }
+}
+
+/* mainboard */
+
+
+.mainboard {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    margin: 100px auto;
+    width: 500px;
+    height: 500px;
+    border: 0.5rem solid var(--stone);
+}
+
+.square {
+    opacity: 1;
+    padding-top: 1rem;
+    font-size: 100px;
+    text-align: center;
+    border: 2px solid var(--stone);
+    cursor: pointer; 
+    transition: all 1s ease;
+}
+
+.square:hover {
+    background-color: #DADDFC;
+    transform: background-color 0.5s;
+}
+
+
+
+@media (max-width: 1024px) {
+    .mainboard {
+        width: 400px;
+        height: 400px;
+    }
+
+
+}
+
+
+/* winner modal */
+
+.modal {
+    display: none;
+    position: absolute;
+    padding: 7rem;
+    font-size: 2rem;
+    margin: 300px auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    border: 2px solid var(--shadow);
+    width: 500px;
+    height: 500px;
+    background-color: var(--stone);
+    box-shadow: 0 0.5rem 1.5rem var(--shadow);
+}
+
+@media (max-width: 1024px) {
+    .modal {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+
+.winner__text {
+    color:aliceblue;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--shadow);
+    background-color: var(--mist);
+    color: var(--shadow);
+    cursor: pointer;
+}
+
+
+.blur {
+    filter: blur(0.5rem);
+}
+
+.show {
+    display: block;
+}
